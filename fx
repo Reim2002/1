@@ -856,13 +856,7 @@ local Head = Character.Head
 		
 		fixinggui = false
 	end
-	Player:FindFirstChildOfClass("PlayerGui").DescendantRemoving:Connect(function(v)
-		if stopeverything then wait(HUGE) end
-		if not fixinggui then
-			if v == gui or v:IsDescendantOf(gui) then
-			end
-		end
-	end)
+
 	coroutine.resume(coroutine.create(function()
 		local noob = 0
 		repeat if stopeverything then wait(HUGE) end noob = noob + game:GetService("RunService").RenderStepped:Wait() until noob >= .1
