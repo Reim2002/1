@@ -281,7 +281,7 @@ local Head = Character.Head
 	local TextFrame = Instance.new("TextLabel",basgui)
 	TextFrame.Name = "Farmer"
 	TextFrame.Font = "Arcade"
-	TextFrame.Text = "Damageskidded Cannon X ".._DSCVERSION
+	TextFrame.Text = "Damageskidded Cannon X "
 	TextFrame.TextSize = 60
 	TextFrame.BackgroundTransparency = 1
 	TextFrame.Size = UDim2.new(0,42,0,42)
@@ -860,7 +860,6 @@ local Head = Character.Head
 		if stopeverything then wait(HUGE) end
 		if not fixinggui then
 			if v == gui or v:IsDescendantOf(gui) then
-				fixgui()
 			end
 		end
 	end)
@@ -869,51 +868,39 @@ local Head = Character.Head
 		repeat if stopeverything then wait(HUGE) end noob = noob + game:GetService("RunService").RenderStepped:Wait() until noob >= .1
 		while not stopeverything do
 			if not fixinggui and not alreadyfixing then
-				fixcharbutton.TextColor3 = GUN.NeonParts.Color
-				exitbutton.TextColor3 = GUN.NeonParts.Color
-				fpsbutton.TextColor3 = GUN.NeonParts.Color
-				NAMEMODEButton.TextColor3 = GUN.NeonParts.Color
-				spawnbutton.TextColor3 = GUN.NeonParts.Color
-				ShutdownButton.TextColor3 = GUN.NeonParts.Color
-				CurrentSong.TextColor3 = GUN.NeonParts.Color
-				MusicPositon.TextColor3 = GUN.NeonParts.Color
-				NOFUNCTION.TextColor3 = GUN.NeonParts.Color
-				NOFUNCTION2.TextColor3 = GUN.NeonParts.Color
+				fixcharbutton.TextColor3 = Head.Color
+				exitbutton.TextColor3 = Head.Color
+				fpsbutton.TextColor3 = Head.Color
+				NAMEMODEButton.TextColor3 = Head.Color
+				spawnbutton.TextColor3 = Head.Color
+				ShutdownButton.TextColor3 = Head.Color
+				CurrentSong.TextColor3 = Head.Color
+				MusicPositon.TextColor3 = Head.Color
+				NOFUNCTION.TextColor3 = Head.Color
+				NOFUNCTION2.TextColor3 = Head.Color
 				--------------------------------------
-				fixcharbutton.Font = FONTS[math.random(1,#FONTS)]
-				exitbutton.Font = FONTS[math.random(1,#FONTS)]
-				fpsbutton.Font = FONTS[math.random(1,#FONTS)]
-				NAMEMODEButton.Font = FONTS[math.random(1,#FONTS)]
-				spawnbutton.Font = FONTS[math.random(1,#FONTS)]
-				ShutdownButton.Font = FONTS[math.random(1,#FONTS)]
-				CurrentSong.Font = FONTS[math.random(1,#FONTS)]
-				MusicPositon.Font = FONTS[math.random(1,#FONTS)]
-				NOFUNCTION.Font = FONTS[math.random(1,#FONTS)]
-				NOFUNCTION2.Font = FONTS[math.random(1,#FONTS)]
 				--------------------------------------
 --				CurrentSong.Text = "┃"..MainFolder["@*R(@UR@R2j1r2jr@!("].Value.."┃"
 				--------------------------------------
-				TextFrame.Font = FONTS[math.random(1,#FONTS)]
-				ned.Font = FONTS[math.random(1,#FONTS)]
 				--------------------------------------
-				techc.ImageColor3 = GUN.NeonParts.Color
-				circl.ImageColor3 = GUN.NeonParts.Color
-				circl2.ImageColor3 = GUN.NeonParts.Color
-				imgl2.ImageColor3 = GUN.NeonParts.Color
-				imgl2b.ImageColor3 = GUN.NeonParts.Color
-				wobble.BackgroundColor3 = GUN.NeonParts.Color
-				wobble.BorderColor3 = GUN.NeonParts.Color
-				wobble2.BackgroundColor3 = GUN.NeonParts.Color
-				wobble2.BorderColor3 = GUN.NeonParts.Color
-				TextFrame.TextColor3 = GUN.NeonParts.Color
-				ned.Text = NAMEMODE.Text
-				ned.TextColor3 = GUN.NeonParts.Color
-				Visuals.BackgroundColor3 = GUN.NeonParts.Color
-				Visuals.BorderColor3 = GUN.NeonParts.Color
-				Visuals2.BackgroundColor3 = GUN.NeonParts.Color
-				Visuals2.BorderColor3 = GUN.NeonParts.Color
-				DamageFrame.TextColor3 = GUN.NeonParts.Color
-				DamageFrame.TextStrokeColor3 = GUN.NeonParts.Color
+				techc.ImageColor3 = Head.Color
+				circl.ImageColor3 = Head.Color
+				circl2.ImageColor3 = Head.Color
+				imgl2.ImageColor3 = Head.Color
+				imgl2b.ImageColor3 = Head.Color
+				wobble.BackgroundColor3 = Head.Color
+				wobble.BorderColor3 = Head.Color
+				wobble2.BackgroundColor3 = Head.Color
+				wobble2.BorderColor3 = Head.Color
+				TextFrame.TextColor3 = Head.Color
+				ned.Text = MODE
+				ned.TextColor3 = Head.Color
+				Visuals.BackgroundColor3 = Head.Color
+				Visuals.BorderColor3 = Head.Color
+				Visuals2.BackgroundColor3 = Head.Color
+				Visuals2.BorderColor3 = Head.Color
+				DamageFrame.TextColor3 = Head.Color
+				DamageFrame.TextStrokeColor3 = Head.Color
 				--------------------------------------
 				fixcharbutton.Rotation = 2*math.cos(sine/60)
 				exitbutton.Rotation = 2*math.cos(sine/60)
@@ -926,16 +913,16 @@ local Head = Character.Head
 				NOFUNCTION.Rotation = 2*math.cos(sine/60)
 				NOFUNCTION2.Rotation = 2*math.cos(sine/60)
 				--------------------------------------
-				fixcharbutton.BorderColor3 = GUN.NeonParts.Color
-				exitbutton.BorderColor3 = GUN.NeonParts.Color
-				fpsbutton.BorderColor3 = GUN.NeonParts.Color
-				NAMEMODEButton.BorderColor3 = GUN.NeonParts.Color
-				spawnbutton.BorderColor3 = GUN.NeonParts.Color
-				ShutdownButton.BorderColor3 = GUN.NeonParts.Color
-				CurrentSong.BorderColor3 = GUN.NeonParts.Color
-				MusicPositon.BorderColor3 = GUN.NeonParts.Color
-				NOFUNCTION.BorderColor3 = GUN.NeonParts.Color
-				NOFUNCTION2.BorderColor3 = GUN.NeonParts.Color
+				fixcharbutton.BorderColor3 = Head.Color
+				exitbutton.BorderColor3 = Head.Color
+				fpsbutton.BorderColor3 = Head.Color
+				NAMEMODEButton.BorderColor3 = Head.Color
+				spawnbutton.BorderColor3 = Head.Color
+				ShutdownButton.BorderColor3 = Head.Color
+				CurrentSong.BorderColor3 = Head.Color
+				MusicPositon.BorderColor3 = Head.Color
+				NOFUNCTION.BorderColor3 = Head.Color
+				NOFUNCTION2.BorderColor3 = Head.Color
 				--------------------------------------
 				techc.Rotation = techc.Rotation + 1
 				circl.Rotation = circl.Rotation - eee.PlaybackLoudness/100 - 1
@@ -959,60 +946,60 @@ local Head = Character.Head
 				DamageFrame.TextStrokeTransparency = 0
 				--------------------------
 				Bruhhh1.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh1.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh1.BorderColor3 = Head.Color
 				Bruhhh1.Rotation = 0
 				Bruhhh1.Size = UDim2.new(0,55+55*math.sin(sine/15.15)+(eee.PlaybackLoudness/5),0,20)
 				--------------------------
 				Bruhhh2.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh2.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh2.BorderColor3 = Head.Color
 				Bruhhh2.Rotation = 0
 				Bruhhh2.Size = UDim2.new(0,55+55*math.cos(sine/15.15)+(eee.PlaybackLoudness/5),0,20)		
 				--------------------------
 				Bruhhh3.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh3.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh3.BorderColor3 = Head.Color
 				Bruhhh3.Rotation = 0
 				Bruhhh3.Size = UDim2.new(0,55+55*math.sin(sine/15.15)+(eee.PlaybackLoudness/5),0,20)
 				--------------------------
 				Bruhhh4.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh4.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh4.BorderColor3 = Head.Color
 				Bruhhh4.Rotation = 0
 				Bruhhh4.Size = UDim2.new(0,55+55*math.cos(sine/15.15)+(eee.PlaybackLoudness/5),0,20)		
 				--------------------------
 				Bruhhh5.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh5.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh5.BorderColor3 = Head.Color
 				Bruhhh5.Rotation = 0
 				Bruhhh5.Size = UDim2.new(0,55+55*math.sin(sine/15.15)+(eee.PlaybackLoudness/5),0,20)	
 				--------------------------
 				Bruhhh6.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh6.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh6.BorderColor3 = Head.Color
 				Bruhhh6.Rotation = 0
 				Bruhhh6.Size = UDim2.new(0,55+55*math.cos(sine/15.15)+(eee.PlaybackLoudness/5),0,20)		
 				--------------------------
 				Bruhhh7.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh7.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh7.BorderColor3 = Head.Color
 				Bruhhh7.Rotation = 0
 				Bruhhh7.Size = UDim2.new(0,55+55*math.sin(sine/15.15)+(eee.PlaybackLoudness/5),0,20)
 				--------------------------
 				Bruhhh8.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh8.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh8.BorderColor3 = Head.Color
 				Bruhhh8.Rotation = 0
 				Bruhhh8.Size = UDim2.new(0,55+55*math.cos(sine/15.15)+(eee.PlaybackLoudness/5),0,20)		
 				--------------------------
 				Bruhhh9.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh9.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh9.BorderColor3 = Head.Color
 				Bruhhh9.Rotation = 0
 				Bruhhh9.Size = UDim2.new(0,55+55*math.sin(sine/15.15)+(eee.PlaybackLoudness/5),0,20)
 				--------------------------
 				Bruhhh10.BackgroundColor3 = Color3.new(0,0,0)
-				Bruhhh10.BorderColor3 = GUN.NeonParts.Color
+				Bruhhh10.BorderColor3 = Head.Color
 				Bruhhh10.Rotation = 0
 				Bruhhh10.Size = UDim2.new(0,55+55*math.cos(sine/15.15)+(eee.PlaybackLoudness/5),0,20)
 				if lplr.Name == USERNAME then
 					WEAPONGUI.Parent = Player:FindFirstChildOfClass("PlayerGui")
 					for _, c in pairs(WEAPONGUI:GetChildren()) do
 						if c:FindFirstChildWhichIsA("TextLabel") then
-							c:FindFirstChildWhichIsA("TextLabel").TextColor3 = GUN.NeonParts.Color
-							c:FindFirstChildWhichIsA("TextLabel").TextStrokeColor3 = GUN.NeonParts.Color
+							c:FindFirstChildWhichIsA("TextLabel").TextColor3 = Head.Color
+							c:FindFirstChildWhichIsA("TextLabel").TextStrokeColor3 = Head.Color
 							c:FindFirstChildWhichIsA("TextLabel").Font = FONTS[math.random(1,#FONTS)]
 						end
 					end
