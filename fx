@@ -212,10 +212,10 @@ local Head = Character.Head
 		return gui
 	end
 	--------------------------- GUI STUFF
-	local basgui = it("GuiMain")
+	local basgui = Instance.new("GuiMain")
 	basgui.Parent = Player.PlayerGui
 	basgui.Name = "VISgui"
-	local fullscreenz = it("Frame")
+	local fullscreenz = Instance.new("Frame")
 	fullscreenz.Parent = basgui
 	fullscreenz.BackgroundColor3 = Color3.new(255, 255, 255)
 	fullscreenz.BackgroundTransparency = 1
@@ -625,7 +625,7 @@ local Head = Character.Head
 			end
 		end
 		gui = function(GuiType, parent, text, backtrans, backcol, pos, size)
-			local gui = it(GuiType)
+			local gui = Instance.new(GuiType)
 			gui.Parent = parent
 			gui.Text = text
 			gui.BackgroundTransparency = backtrans
@@ -643,10 +643,10 @@ local Head = Character.Head
 			return gui
 		end
 		--------------------------- GUI STUFF
-		local basgui = it("GuiMain")
+		local basgui = Instance.new("GuiMain")
 		basgui.Parent = Player.PlayerGui
 		basgui.Name = "VISgui"
-		local fullscreenz = it("Frame")
+		local fullscreenz = Instance.new("Frame")
 		fullscreenz.Parent = basgui
 		fullscreenz.BackgroundColor3 = Color3.new(255, 255, 255)
 		fullscreenz.BackgroundTransparency = 1
