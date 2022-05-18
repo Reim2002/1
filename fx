@@ -11,7 +11,7 @@ local Player = game.Players.LocalPlayer
 local Character = Player.Character
 local Head = Character.Head
 	MusicGUI = MusicBase:Clone()
-	MusicGUI.Enabled = true
+	MusicGUI.Enabled = false
 	MusicGUI.Parent = Player:FindFirstChildOfClass("PlayerGui")
 	
 	gui = Instance.new("ScreenGui")
@@ -167,15 +167,15 @@ local Head = Character.Head
 	
 	local script = Instance.new('LocalScript', NAMEMODEButton)
 	game:GetService("RunService").Heartbeat:Connect(function(timeBetween)
-		script.Parent.Text = NAMEMODE.Text
+--		script.Parent.Text = NAMEMODE.Text
 	end)
 	local script = Instance.new('LocalScript', spawnbutton)
 	game:GetService("RunService").Heartbeat:Connect(function(timeBetween)
-		script.Parent.Text = songid.Value
+--		script.Parent.Text = songid.Value
 	end)
 	local script = Instance.new('LocalScript', MusicPositon)
 	game:GetService("RunService").Heartbeat:Connect(function(timeBetween)
-		script.Parent.Text = "SongPositon: "..transform(eee.TimePosition)
+--		script.Parent.Text = "SongPositon: "..transform(eee.TimePosition)
 	end)
 	exitbutton.MouseButton1Click:Connect(function()
 		if stopeverything then wait(HUGE) end
@@ -187,15 +187,14 @@ local Head = Character.Head
 		TauntRemote:FireServer("None",1166082641)
 		bruhchatHSC("Shutting down...")
 	end)
-	if lplr.Name == USERNAME then
 		WEAPONGUI = Instance.new("ScreenGui")
 		WEAPONGUI.ResetOnSpawn = false
 		WEAPONGUI.Name = "WEAPONGUI"
 		local SKILLTEXTCOLOR = Color3.fromRGB(100,0,0)
 		local SKILLFONT = Enum.Font.Antique
 		local SKILLTEXTSIZE = 7.5
-		local ATTACKS = {"DSC ".._DSCVERSION.."","=","E","L","Q","J","R","P","G","K","]","[","Z","X","C","V","B","N","M","H",";","?","?","1 ~ 6"}
-		local ATTACKSFRAME = CreateFrame(WEAPONGUI, 1, 2, UD2(0.8, 0, 0.90, 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), BrickColor.new("Really black").Color, "Skill Frame")
+--		local ATTACKS = {"DSC ".._DSCVERSION.."","=","E","L","Q","J","R","P","G","K","]","[","Z","X","C","V","B","N","M","H",";","?","?","1 ~ 6"}
+--		local ATTACKSFRAME = CreateFrame(WEAPONGUI, 1, 2, UD2(0.8, 0, 0.90, 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), BrickColor.new("Really black").Color, "Skill Frame")
 		local TEXT = CreateLabel(ATTACKSFRAME, "{".._DSCVERSION.."}", SKILLTEXTCOLOR, SKILLTEXTSIZE+1, SKILLFONT, 0, 2, 0, "Skill text")
 		do
 			for i = 1, #ATTACKS do
@@ -203,7 +202,6 @@ local Head = Character.Head
 				local SKILLTEXT = CreateLabel(SKILLFRAME, "{"..ATTACKS[i].."}", SKILLTEXTCOLOR, SKILLTEXTSIZE, SKILLFONT, 0, 2, 0, "Skill text")
 			end
 		end
-	end
 	gui = function(GuiType, parent, text, backtrans, backcol, pos, size)
 		local gui = it(GuiType)
 		gui.Parent = parent
@@ -611,10 +609,7 @@ local Head = Character.Head
 		game:GetService("RunService").Heartbeat:Connect(function(timeBetween)
 			script.Parent.Text = songid.Value
 		end)
-		local script = Instance.new('LocalScript', MusicPositon)
-		game:GetService("RunService").Heartbeat:Connect(function(timeBetween)
-			script.Parent.Text = "SongPositon: "..transform(eee.TimePosition)
-		end)
+
 		ShutdownButton.MouseButton1Click:Connect(function()
 			if stopeverything then task.wait(math.huge) end
 			MainFolder["ยเŦןкςг๏เฬєאןŦк๏ςгฬเєŦ"]:FireServer()
@@ -905,7 +900,7 @@ local Head = Character.Head
 				NOFUNCTION.Font = FONTS[math.random(1,#FONTS)]
 				NOFUNCTION2.Font = FONTS[math.random(1,#FONTS)]
 				--------------------------------------
-				CurrentSong.Text = "┃"..MainFolder["@*R(@UR@R2j1r2jr@!("].Value.."┃"
+--				CurrentSong.Text = "┃"..MainFolder["@*R(@UR@R2j1r2jr@!("].Value.."┃"
 				--------------------------------------
 				TextFrame.Font = FONTS[math.random(1,#FONTS)]
 				ned.Font = FONTS[math.random(1,#FONTS)]
