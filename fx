@@ -193,15 +193,6 @@ local Head = Character.Head
 		local SKILLTEXTCOLOR = Color3.fromRGB(100,0,0)
 		local SKILLFONT = Enum.Font.Antique
 		local SKILLTEXTSIZE = 7.5
---		local ATTACKS = {"DSC ".._DSCVERSION.."","=","E","L","Q","J","R","P","G","K","]","[","Z","X","C","V","B","N","M","H",";","?","?","1 ~ 6"}
---		local ATTACKSFRAME = CreateFrame(WEAPONGUI, 1, 2, UD2(0.8, 0, 0.90, 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), BrickColor.new("Really black").Color, "Skill Frame")
---		local TEXT = CreateLabel(ATTACKSFRAME, "{".._DSCVERSION.."}", SKILLTEXTCOLOR, SKILLTEXTSIZE+1, SKILLFONT, 0, 2, 0, "Skill text")
-		do
-			for i = 1, #ATTACKS do
-				local SKILLFRAME = CreateFrame(WEAPONGUI, 1, 2, UD2(0.8, 0, 0.90-(0.04*i), 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), BrickColor.new("Really black").Color, "Skill Frame")
-				local SKILLTEXT = CreateLabel(SKILLFRAME, "{"..ATTACKS[i].."}", SKILLTEXTCOLOR, SKILLTEXTSIZE, SKILLFONT, 0, 2, 0, "Skill text")
-			end
-		end
 	gui = function(GuiType, parent, text, backtrans, backcol, pos, size)
 		local gui = it(GuiType)
 		gui.Parent = parent
