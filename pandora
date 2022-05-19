@@ -62,7 +62,7 @@ rs.Stepped:Wait()
 hrp1.RotVelocity = Vector3.new(0, 0, 0)
 rs.Heartbeat:Wait()
 if fling then
-hrp1.RotVelocity = Vector3.new(1000, 1000, 1000)
+hrp1.RotVelocity = Vector3.new(10000, 10000, 10000)
 att.Parent = part
 part.Position = fling.Position
 else
