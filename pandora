@@ -66,7 +66,6 @@ hrp1.RotVelocity = Vector3.new(1000, 1000, 1000)
 att.Parent = part
 part.Position = fling.Position
 else
-hrp1.RotVelocity = Vector3.new(0, 0, 0)
 att.Parent = hrp
 end
 end
