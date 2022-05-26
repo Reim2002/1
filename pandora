@@ -11,15 +11,15 @@ for i,v in pairs(lp.Character:GetDescendants()) do
 game.Players:Chat("-gh 18015906,7628287080,1744235800,1743941933,1744219293,13702134,6849715665, 125886373")
 wait(0.5)
 
-game:GetService("Workspace").REIM202.Scarlett.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.Scarlett.Handle.Mesh:Destroy()
 wait()
-game:GetService("Workspace").REIM202["Long Hair Extensions w/ Pigtails"].Handle.SpecialMesh:Destroy()
+game.Players.LocalPlayer.Character["Long Hair Extensions w/ Pigtails"].Handle.SpecialMesh:Destroy()
 wait()
-game:GetService("Workspace").REIM202.DreamCap.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.DreamCap.Handle.Mesh:Destroy()
 wait()
-game:GetService("Workspace").REIM202.PanicCap.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character.PanicCap.Handle.Mesh:Destroy()
 wait()
-game:GetService("Workspace").REIM202["gradcap_18"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character["gradcap_18"].Handle.Mesh:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Reim2002/2/main/reanim"))()
 
